@@ -39,8 +39,8 @@
 
 - name: Generate DNSTap-BGP config
   template:
-    src: etc/dnstap-bgp.toml.j2
-    dest: /etc/dnstap-bgp.toml
+    src: etc/dnstap-bgp/dnstap-bgp.conf.j2
+    dest: /etc/dnstap-bgp/dnstap-bgp.conf
   register: dnstap_cfg
 
 - name: Generate DNSTap-BGP script
